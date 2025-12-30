@@ -151,6 +151,7 @@
                     </div>
                     <div class="mt-4">
                         <button id="openVideoBtn5" class="button warning">▶ Tonton penjelasan singkat (Jenis Tumbukan)</button>
+                        <button id="openVideoBtn7" class="button warning ml-4">▶ Tonton penjelasan singkat (Koefisien Restitusi)</button>
                     </div>
                 </div>
 
@@ -234,6 +235,18 @@
                 </div>
             </div>
 
+            <div id="videoModal7" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Koefisien Restitusi</h3>
+                        <button id="closeVideoBtn7" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe7" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
             <!-- In-page video modal for Hubungan link -->
             <div id="videoModal4" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
                 <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
@@ -284,7 +297,7 @@
                     const modal = document.getElementById('videoModal2');
                     const closeBtn = document.getElementById('closeVideoBtn2');
                     const iframe = document.getElementById('videoIframe2');
-                    const embedSrc = 'https://www.youtube.com/embed/SE9GbAs3_vk?si=a8B_emCGx8OEJMMU&autoplay=1';
+                    const embedSrc = 'https://www.youtube.com/embed/dhYdqnKyfSY?autoplay=1';
                     function open(){ iframe.src = embedSrc; modal.classList.remove('hidden'); }
                     function close(){ modal.classList.add('hidden'); iframe.src = ''; }
                     openBtn && openBtn.addEventListener('click', open);
@@ -299,7 +312,7 @@
                     const modal3 = document.getElementById('videoModal3');
                     const closeBtn3 = document.getElementById('closeVideoBtn3');
                     const iframe3 = document.getElementById('videoIframe3');
-                    const embedSrc3 = 'https://www.youtube.com/embed/AlHlZR8kbV8?si=l32Wm42qriYtLaLp&autoplay=1';
+                    const embedSrc3 = 'https://www.youtube.com/embed/Q7fQApv6TVc?autoplay=1';
                     function open3(){ iframe3.src = embedSrc3; modal3.classList.remove('hidden'); }
                     function close3(){ modal3.classList.add('hidden'); iframe3.src = ''; }
                     openBtn3 && openBtn3.addEventListener('click', open3);
@@ -314,7 +327,7 @@
                     const modal4 = document.getElementById('videoModal4');
                     const closeBtn4 = document.getElementById('closeVideoBtn4');
                     const iframe4 = document.getElementById('videoIframe4');
-                    const embedSrc4 = 'https://www.youtube.com/embed/lbhF55PZHkA?si=uZfV7q0io-T7V2Vx&autoplay=1';
+                    const embedSrc4 = 'https://www.youtube.com/embed/PCnlG7s0_RE?autoplay=1';
                     function open4(){ iframe4.src = embedSrc4; modal4.classList.remove('hidden'); }
                     function close4(){ modal4.classList.add('hidden'); iframe4.src = ''; }
                     openBtn4 && openBtn4.addEventListener('click', open4);
@@ -329,7 +342,7 @@
                     const modal5 = document.getElementById('videoModal5');
                     const closeBtn5 = document.getElementById('closeVideoBtn5');
                     const iframe5 = document.getElementById('videoIframe5');
-                    const embedSrc5 = 'https://www.youtube.com/embed/TA4qC3p36NU?si=cc98F1OM_PGkOpem&autoplay=1';
+                    const embedSrc5 = 'https://www.youtube.com/embed/l7gRj7scWYc?autoplay=1';
                     function open5(){ iframe5.src = embedSrc5; modal5.classList.remove('hidden'); }
                     function close5(){ modal5.classList.add('hidden'); iframe5.src = ''; }
                     openBtn5 && openBtn5.addEventListener('click', open5);
@@ -337,8 +350,33 @@
                     modal5 && modal5.addEventListener('click', (e)=>{ if(e.target===modal5) close5(); });
                 })();
             </script>
-            
-        </div>
-    </div>
-</body>
-</html>
+
+            <script>
+                (function(){
+                    const openBtn6 = document.getElementById('openVideoBtn6');
+                    const modal6 = document.getElementById('videoModal6');
+                    const closeBtn6 = document.getElementById('closeVideoBtn6');
+                    const iframe6 = document.getElementById('videoIframe6');
+                    const embedSrc6 = 'https://www.youtube.com/embed/9WTu9UU1VRw?autoplay=1';
+                    function open6(){ iframe6.src = embedSrc6; modal6.classList.remove('hidden'); }
+                    function close6(){ modal6.classList.add('hidden'); iframe6.src = ''; }
+                    openBtn6 && openBtn6.addEventListener('click', open6);
+                    closeBtn6 && closeBtn6.addEventListener('click', close6);
+                    modal6 && modal6.addEventListener('click', (e)=>{ if(e.target===modal6) close6(); });
+                })();
+            </script>
+
+            <script>
+                (function(){
+                    const openBtn7 = document.getElementById('openVideoBtn7');
+                    const modal7 = document.getElementById('videoModal7');
+                    const closeBtn7 = document.getElementById('closeVideoBtn7');
+                    const iframe7 = document.getElementById('videoIframe7');
+                    const embedSrc7 = 'https://www.youtube.com/embed/-DkT6y41kwg?autoplay=1';
+                    function open7(){ iframe7.src = embedSrc7; modal7.classList.remove('hidden'); }
+                    function close7(){ modal7.classList.add('hidden'); iframe7.src = ''; }
+                    openBtn7 && openBtn7.addEventListener('click', open7);
+                    closeBtn7 && closeBtn7.addEventListener('click', close7);
+                    modal7 && modal7.addEventListener('click', (e)=>{ if(e.target===modal7) close7(); });
+                })();
+            </script>
