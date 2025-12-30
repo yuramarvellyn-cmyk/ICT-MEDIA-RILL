@@ -6,6 +6,7 @@
     <title>Materi Pembelajaran - Physics Adventure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;900&family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <style>
         * { font-family: 'Poppins', sans-serif; }
         body { background: url('https://raw.githubusercontent.com/lorrainemydth-gif/MEDIA_PEMBELAJARAN/3b9f4f62282a6d3295520df7ccbd2c964d8ce135/LKPD%20SISWA%20MEDIA%20PEMBELAJARAN%20ICT%20%282%29.png') center/cover no-repeat, url('assets/lkpd-v3.png') center/cover no-repeat; background-color: #ffffff; }
@@ -54,9 +55,7 @@
                     </p>
                     
                     <div class="bg-blue-50 p-4 rounded-lg border-2 border-blue-300 mb-4">
-                        <p class="font-mono text-lg text-center">
-                            <strong>p = m × v</strong>
-                        </p>
+                        <div id="rumus-momentum" class="text-lg text-center"></div>
                         <p class="text-sm text-gray-600 text-center mt-2">
                             p = momentum, m = massa, v = kecepatan
                         </p>
@@ -401,3 +400,13 @@
                     modal7 && modal7.addEventListener('click', (e)=>{ if(e.target===modal7) close7(); });
                 })();
             </script>
+            <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    katex.render("\vec{p} = m \times \vec{v}", document.getElementById("rumus-momentum"), { throwOnError: false });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
